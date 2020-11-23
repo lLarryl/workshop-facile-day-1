@@ -13,7 +13,11 @@
       "baseUrl": ".",
       "declaration": true,
       "noUnusedParameters": true,
-      "noUnusedLocals": true
+      "noUnusedLocals": true,
+      "paths": {
+        "@app": ["src/"],
+        "@app/*": ["src/*"]
+      }
     },
     "include": ["src/**/*.ts"]
   }
