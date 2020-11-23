@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node -r source-map-support/register lib/index.js",
     "build": "tsc --p tsconfig.json",
-    "dev": "ts-node -P tsconfig.json -r tsconfig-paths/register src/index.ts"
+    "dev": "node -r ./scripts/ts-node -r tsconfig-paths/register src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
