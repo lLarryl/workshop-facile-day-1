@@ -1,5 +1,7 @@
+import * as M from "@app/math";
+
 describe("Test", () => {
     it("should pass", () => {
-        expect(1).toEqual(1);
+        expect(M.add(1,2)).toEqual(3);
     });
 });

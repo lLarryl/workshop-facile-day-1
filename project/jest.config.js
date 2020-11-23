@@ -1,6 +1,3 @@
-const tsconfig = require("./tsconfig.common");
-const moduleNameMapper = require("tsconfig-paths-jest")(tsconfig);
-
 module.exports = {
     testEnvironment: "node",
     rootDir: "./",
@@ -11,7 +8,6 @@ module.exports = {
     setupFiles: ["./scripts/jest-setup.ts"],
     modulePathIgnorePatterns: ["<rootDir>/lib"],
     verbose: true,
-    moduleNameMapper: moduleNameMapper,
     coveragePathIgnorePatterns: [],
     transform: {
         "^.+\\.ts?$": "ts-jest",
@@ -21,6 +17,7 @@ module.exports = {
     globals: {
         "ts-jest": {
             tsconfig: "<rootDir>/tsconfig.jest.json",
+            compiler: "ttypescript"
         },
     },
 };
