@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "downlevelIteration": true, //se posso utilizzare sintassi di iterable come i for
+      "lib": ["ES2019"], //libreria standard di linguaggio
+      "target": "ES2017", //target di compilazione
+      "module": "CommonJS", //node supporta solo CommonJS. ESNext è supportato in forma sperimentale
+      "strict": true,
+      "outDir": "lib",
+      "noErrorTruncation": true,
+      "noEmit": false,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "declaration": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true
+    },
+    "include": ["src/**/*.ts"]
+  }
